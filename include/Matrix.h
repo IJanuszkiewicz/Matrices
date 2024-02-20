@@ -16,6 +16,8 @@ public:
     Matrix(int t_rows, int t_cols);
     ~Matrix();
 
+    int getRows() const;
+    int getCols() const;
     Matrix &operator=(const Matrix& t_matrix);
     double &operator()(int t_row, int t_col);
     Matrix operator+(const Matrix& t_matrix);

@@ -35,6 +35,14 @@ namespace Matrices {
         delete[] m_mat;
     }
 
+    int Matrix::getRows() const {
+        return m_rows;
+    }
+
+    int Matrix::getCols() const {
+        return m_cols;
+    }
+
     Matrix& Matrix::operator=(const Matrix& t_matrix) {
         if(m_cols == t_matrix.m_cols && m_rows == t_matrix.m_rows) {
             for(int row = 0; row < m_rows; ++row) {
